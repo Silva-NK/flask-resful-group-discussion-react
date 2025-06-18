@@ -1,8 +1,6 @@
 from flask import Flask
-from flask_restful import Api
+from flask_restful import Api, Resource
 from flask_migrate import Migrate
-from config import Config
-from flask_restful import Resource
 
 from main import db, create_app  
 from main.resources.student import StudentListResource, StudentResource
